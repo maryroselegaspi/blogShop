@@ -1,0 +1,76 @@
+body {
+    /*background-color: chocolate;  just to check if linking*/
+}
+nav {
+    position: fixed; /* fix nav bar and  not disappear */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 0 0 0 1.2em;
+    background-color: rgba(255,255,255,0)f; /* set color of Nav bar*/
+    z-index: 1004; /*to avoid main-image and content to overlay the navbar */
+
+    /*add shaddow  GOTO https://html-css-js.com/css/generator/box-shadow/ */
+
+    -webkit-box-shadow: -3px 23px 5px -21px rgba(0,0,0,0.46); 
+    box-shadow: -3px 23px 5px -21px rgba(0,0,0,0.75);
+}
+
+nav ul {
+    list-style-type: none; /* delete bullet points */
+    margin: 1.2em auto; 
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; /* make it block in one line SIDE BY SIDE */
+    font-size: 0.9em; /* make font size smaller */
+    padding:0 1em; /* space to next nav li---0 to left 1 to Right */
+    text-transform: uppercase; /* make font uppercase */
+}
+nav a {
+    text-decoration: none; /*remove undersign */
+    color: #272727; /* change color */
+}
+
+#container {
+    margin: 75px auto 10px auto; /*Because nav is fixed, the start of the page is H1(missing) 
+                        solution set margin of container(guess the px) */
+   /*  background-color: coral; */
+   width: 80%;
+}
+header h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 4em;
+    text-transform: uppercase;
+    padding-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    margin-bottom: 2em;
+    font-weight: lighter;
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+#main-image {
+    position: relative;
+}
+
+/* move content into main image*/
+.main-image-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* text sitting on top */
+    text-align: center;
+
+}
